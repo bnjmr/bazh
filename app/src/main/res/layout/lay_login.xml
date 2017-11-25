@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/layLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <net.kianoni.fontloader.TextView
+                android:id="@+id/txtTitleLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:text="ورود به سامانه "
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_font_big"
+                app:fontFile="fonts/irsans.ttf"></net.kianoni.fontloader.TextView>
+
+            <net.kianoni.fontloader.TextView
+                android:id="@+id/txtCustomerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="نام مجتمع"
+                android:textColor="@color/color_yellow_text"
+                android:textSize="@dimen/size_font_small"
+                android:visibility="gone"
+                app:fontFile="fonts/sl.ttf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <net.kianoni.fontloader.TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="لطفا نام کاربری و رمز عبور خود را برای ورود به سیستم وارد کنید"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_font_big"
+                app:fontFile="fonts/is.ttf" />
+
+            <ir.jahanmirbazh.components.CustomEditText
+                android:id="@+id/edtUsername"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/ic_username_edit_text"
+                android:gravity="center_vertical|right"
+                android:layout_gravity="right"
+                android:hint="نام کاربری"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/color_white"
+                android:textSize="@dimen/size_font_edittext"
+                android:typeface="serif" />
+
+            <ir.jahanmirbazh.components.CustomEditText
+                android:id="@+id/edtPassword"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/ic_password_edit_text"
+                android:gravity="right|bottom"
+                android:hint="رمز عبور"
+                android:imeOptions="actionGo"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/color_white"
+                android:textSize="@dimen/size_font_edittext" />
+
+            <include layout="@layout/lay_btn_login" />
+
+            <net.kianoni.fontloader.TextView
+                android:id="@+id/txtErrorMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="3dp"
+                android:text="نام کاربری یا رمز عبور نادرست است"
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/size_font_small"
+                app:fontFile="fonts/sl.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <net.kianoni.fontloader.TextView
+                    android:id="@+id/txtForgetPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="فراموش کردن رمز عبور"
+                    android:textColor="@color/color_yellow_text"
+                    android:textSize="@dimen/size_font_small"
+                    app:fontFile="fonts/sl.ttf" />
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/color_white"
+                    android:orientation="vertical"
+                    android:visibility="gone"></LinearLayout>
+
+                <net.kianoni.fontloader.TextView
+                    android:id="@+id/txtSearchCustomer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="جستجوی مجتمع جدید"
+                    android:textColor="@color/color_yellow_text"
+                    android:textSize="@dimen/size_font_small"
+                    android:visibility="gone"
+                    app:fontFile="fonts/sl.ttf" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

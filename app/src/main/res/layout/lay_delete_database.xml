@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <net.kianoni.fontloader.TextView
+            app:fontFile="fonts/is.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="شما در این قسمت میتوانید تمام اطلاعات موجود در پایگاه داده خود را حذف کرده و دوباره از قسمت لاگین وارد برنامه شوید."
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_font_big"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"/>
+
+
+    <!--<LinearLayout android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:gravity="left"-->
+    <!--android:layout_height="wrap_content">-->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+
+    <!--<LinearLayout-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<com.andexert.library.RippleView-->
+    <!--android:id="@+id/layDeleteDatabase"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:rv_color="@color/color_black"-->
+    <!--android:gravity="center">-->
+    <!--<LinearLayout android:layout_width="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<jahanmirbazhbazh.components.PersianTextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:text="حذف اطلاعات دیتابیس"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:textSize="@dimen/size_font_big"-->
+    <!--android:textColor="@color/color_black"/>-->
+    <!--<ImageView-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:src="@drawable/ic_remove"/>-->
+    <!--</LinearLayout>-->
+    <!--</com.andexert.library.RippleView>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_marginTop="10dp"
+                  android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <com.andexert.library.RippleView
+                    android:id="@+id/layDeleteDatabase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:rv_color="@color/color_black"
+                    android:gravity="center">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:background="@drawable/btn_delete_background"
+                        android:gravity="center">
+                    <net.kianoni.fontloader.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="حذف اطلاعات دیتابیس"
+                            android:textSize="@dimen/size_font_defult"
+                            app:fontFile="fonts/sl.ttf"
+                            android:textColor="@color/color_white"
+                            android:layout_marginLeft="10dp"/>
+                    <ImageView
+                            android:layout_width="@dimen/size_image_very_small"
+                            android:layout_height="@dimen/size_image_very_small"
+                            android:src="@drawable/ic_delete_forever_white_36dp"
+                            android:layout_margin="5dp"
+                            android:layout_marginRight="10dp"/>
+                </LinearLayout>
+            </com.andexert.library.RippleView>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

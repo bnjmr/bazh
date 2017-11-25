@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/bg_lst_item_normal"
+    android:orientation="horizontal">
+    <!--<LinearLayout android:layout_width="3dp"-->
+    <!--android:id="@+id/layStatus"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_height="match_parent"/>-->
+
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="@+id/layMoreDetail"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imgMoreDetail"
+            android:layout_width="@dimen/size_image_big"
+            android:layout_height="@dimen/size_image_big"
+            android:src="@drawable/ic_more_detail" />
+
+        <LinearLayout
+            android:id="@+id/imgNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_new_tag"
+            android:padding="2dp"
+            android:rotation="-45">
+
+            <ir.jahanmirbazh.components.PersianTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="جدید"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_white"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:background="#8fff" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <net.kianoni.fontloader.TextView
+                android:id="@+id/txtNewsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:maxLines="3"
+                android:text="شرکت گاز "
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_font_small"
+                app:fontFile="fonts/sl.ttf" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#8fff" />
+
+            <ir.jahanmirbazh.components.PersianTextViewThin
+                android:id="@+id/txtNewsDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="left|center_vertical"
+                android:text="1394/06/26"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_font_defult" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <net.kianoni.fontloader.TextView
+                android:id="@+id/txtBillSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_font_defult"
+                app:fontFile="fonts/sl.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="10dp"
+                android:background="#0fff" />
+
+            <net.kianoni.fontloader.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_font_defult"
+                app:fontFile="fonts/sl.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="10dp"
+                android:background="#0fff" />
+
+            <net.kianoni.fontloader.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_font_defult"
+                app:fontFile="fonts/sl.ttf" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

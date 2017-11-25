@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#C77426"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:id="@+id/layBackTicketReplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1">
+
+                </LinearLayout>
+
+                <net.kianoni.fontloader.TextView
+                    android:id="@+id/txtSender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="فرستنده"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/size_font_small"
+                    app:fontFile="fonts/irsans.ttf" />
+
+                <net.kianoni.fontloader.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="فرستنده : "
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/size_font_small"
+                    app:fontFile="fonts/irsans.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+
+                <net.kianoni.fontloader.TextView
+                    android:id="@+id/txtTicketStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="وضعیت : "
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/size_font_small"
+                    app:fontFile="fonts/irsans.ttf" />
+
+
+                <net.kianoni.fontloader.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="وضعیت : "
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/size_font_small"
+                    app:fontFile="fonts/irsans.ttf" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#8fff" />
+
+            <LinearLayout
+                android:id="@+id/layTicketDes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <WebView
+                    android:id="@+id/txtTicketDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="متن فرستاده شده برای تیکت"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/size_font_small" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ir.jahanmirbazh.components.PersianTextViewNormal
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="25/03/1396"
+                    android:textColor="@color/color_white"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/size_font_small"
+                    app:fontFile="fonts/irsans.ttf" />
+
+                <LinearLayout
+                    android:id="@+id/layAttachment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/layDownloadAttachment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_margin="1dp"
+                            android:src="@drawable/ic_attach_white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layViewAttachment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_margin="1dp"
+                            android:src="@drawable/ic_view_white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

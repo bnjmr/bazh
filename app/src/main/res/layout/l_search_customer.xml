@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/mainLayout"
+        android:layout_marginBottom="3dp"
+        android:clickable="true"
+        android:background="@drawable/bg_lst_item_selector"
+        android:layout_height="wrap_content">
+    <net.kianoni.fontloader.TextView
+            app:fontFile="fonts/sl.ttf"
+            android:layout_width="match_parent"
+            android:text="جهانمیر"
+            android:id="@+id/txtCustomerName"
+            android:textColor="@color/color_white"
+            android:typeface="sans"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/size_font_defult"
+            android:layout_height="wrap_content"/>
+    <View android:background="#8fff" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+    <net.kianoni.fontloader.TextView
+            app:fontFile="fonts/is.ttf"
+            android:layout_width="match_parent"
+            android:text="جهانمیر"
+            android:id="@+id/txtCustomerDescription"
+            android:textColor="@color/color_white"
+            android:typeface="sans"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="@dimen/size_font_small"
+            android:layout_height="wrap_content"/>
+</LinearLayout>

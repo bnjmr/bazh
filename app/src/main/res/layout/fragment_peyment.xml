@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:rotationY="180">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_trans_payment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/back_fragment"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/size_margin_top_from_add_new_item"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- layExpandPayment -->
+            <LinearLayout
+                android:id="@+id/layExpandPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/lay_make_payment" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewPeyment"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true" />
+                <LinearLayout
+                    android:id="@+id/layShowMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <net.kianoni.fontloader.TextView
+                        android:id="@+id/txtMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="موردی ثبت نشده است"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult"
+                        app:fontFile="fonts/sl.ttf" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layAddNewPayment"
+        layout="@layout/lay_add_new_payment"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

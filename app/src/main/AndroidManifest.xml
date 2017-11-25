@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ir.jahanmirbazh">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <meta-data
+        android:name="AA_DB_NAME"
+        android:value="Database.db" />
+    <meta-data
+        android:name="AA_DB_VERSION"
+        android:value="2" />
+    <meta-data
+        android:name="AA_MODELS"
+        android:value="                 ir.jahanmirbazh.Database.ModelBill,                 ir.jahanmirbazh.Database.ModelBillDetail,                 ir.jahanmirbazh.Database.ModelCost,                 ir.jahanmirbazh.Database.ModelEstate,                 ir.jahanmirbazh.Database.ModelNews,                 ir.jahanmirbazh.Database.ModelNewsDetail,                 ir.jahanmirbazh.Database.ModelNotification,                 ir.jahanmirbazh.Database.ModelPayment,                 ir.jahanmirbazh.Database.ModelSetting,                 ir.jahanmirbazh.Database.ModelTicket,                 ir.jahanmirbazh.Database.ModelTicketDetail,                 ir.jahanmirbazh.Database.ModelUserInfo" />
+
+    <application
+        android:name=".bazh.G"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".bazh.ActivityStarter">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".bazh.ActivityFirstPage"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".bazh.ActivityLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bazh.ActivitySetting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bazh.ActivityWizard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bazh.ActivityShowBill"
+            android:screenOrientation="portrait" />
+
+        <!-- Firebase Notifications -->
+        <service android:name=".classes.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".classes.FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- Firebase Notifications -->
+
+        <activity
+            android:name=".bazh.ActivityShowPayment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bazh.ActivityShowNews"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bazh.ActivityShowTicket"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bazh.ActivitySendTicket"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bazh.ActivityShowCost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bazh.ActivityShowNotification"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="ir.jahanmirbazh.TARGET_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="c0fa959b956eff57d903c0bec031fc881cfcbd0d" />
+
+        <activity
+            android:name=".bazh.ActivityBankList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bazh.ActivityBrowser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bazh.ActivitySplash"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

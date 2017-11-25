@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:rotationY="180">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_trans_home"
+        android:id="@+id/imageView" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/back_fragment"
+        android:id="@+id/scrollView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    app:cardBackgroundColor="@color/color_main_app"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <net.kianoni.fontloader.TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text=" بدهکاری "
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/size_font_defult"
+                            app:fontFile="fonts/sl.ttf" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#8fff" />
+
+                        <net.kianoni.fontloader.TextView
+                            android:id="@+id/txtDebt"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text=" بدهکاری "
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/size_font_defult"
+                            app:fontFile="fonts/biran.ttf" />
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    app:cardBackgroundColor="@color/color_main_app"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <net.kianoni.fontloader.TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="بستانکاری"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/size_font_defult"
+                            app:fontFile="fonts/sl.ttf" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#8fff" />
+
+                        <net.kianoni.fontloader.TextView
+                            android:id="@+id/txtCredit"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="بسستانکاری"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/size_font_defult"
+                            app:fontFile="fonts/biran.ttf" />
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <net.kianoni.fontloader.TextView
+                android:id="@+id/txtAds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/size_font_small"
+                app:fontFile="fonts/biran.ttf" />
+
+            <include
+                android:visibility="gone"
+                android:id="@+id/loading"
+                layout="@layout/lay_updating" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

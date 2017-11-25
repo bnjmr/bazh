@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layMainNotifyItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/bg_lst_notify"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+
+            <ir.jahanmirbazh.components.LayoutedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="متن پیغام دریافتی"
+                android:textColor="@color/md_grey_300"
+                android:textSize="@dimen/size_font_small"
+                app:fontFile="fonts/sl.ttf" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layNotifyDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ir.jahanmirbazh.components.LayoutedTextView
+                android:id="@+id/txtNotifyDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="test"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_font_defult"
+                app:fontFile="fonts/sl.ttf" />
+        </LinearLayout>
+
+        <ir.jahanmirbazh.components.PersianTextViewNormal
+            android:id="@+id/txtNotifyDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:gravity="left"
+            android:text="1394/06/26"
+            android:textDirection="rtl"
+            android:textColor="@color/md_grey_300" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_light_gray"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layShowNotifyDetail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <net.kianoni.fontloader.TextView
+                    android:id="@+id/txtShowMoreDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="مشاهده متن کامل"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/size_font_small"
+                    app:fontFile="fonts/sl.ttf" />
+
+                <ImageView
+                    android:id="@+id/imgShowMoreDetail"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_view_white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_app"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_trans_setting" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_bg_repeative"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/layToolbarSettingPage"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/toolbar_activity"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/layClose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/ic_arrow_back_white_24dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:orientation="horizontal">
+
+                        <net.kianoni.fontloader.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="تنظیمات"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/size_font_header_activity"
+                            app:fontFile="fonts/SCNormal.otf" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_setting_main_box"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_vertical"
+                            android:orientation="horizontal">
+
+                            <net.kianoni.fontloader.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="تنظیمات عمومی"
+                                android:textColor="@color/color_white"
+                                android:textSize="@dimen/size_font_big"
+                                app:fontFile="fonts/sl.ttf" />
+
+                            <ImageView
+                                android:layout_width="@dimen/size_image_small"
+                                android:layout_height="@dimen/size_image_small"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_setting" />
+                        </LinearLayout>
+                        <!--<LinearLayout android:layout_width="match_parent"-->
+                        <!--android:layout_height="0.5dp"-->
+                        <!--android:background="@color/color_dark_gray"/>-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/bg_setting_inner_box"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/layUpdateProfile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imgExpandProfile"
+                                    android:layout_width="@dimen/size_image_tab_notify"
+                                    android:layout_height="@dimen/size_image_tab_notify"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="2dp"
+                                    android:src="@drawable/ic_expand_more_white_24dp" />
+
+                                <net.kianoni.fontloader.TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="تغییر اطلاعات کاربری"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="@dimen/size_font_defult"
+                                    app:fontFile="fonts/sl.ttf" />
+                            </LinearLayout>
+
+
+                            <!-- layExpandProfile-->
+                            <LinearLayout
+                                android:id="@+id/layExpandProfile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <include layout="@layout/lay_edit_profile" />
+                            </LinearLayout>
+                            <!-- layExpandProfile-->
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="gone"
+                            android:background="@drawable/bg_setting_inner_box"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/layDeleteAllData"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imgExpandDatabase"
+                                    android:layout_width="@dimen/size_image_tab_notify"
+                                    android:layout_height="@dimen/size_image_tab_notify"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="2dp"
+                                    android:src="@drawable/ic_expand_more_white_24dp" />
+
+                                <net.kianoni.fontloader.TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="پاک کردن اطلاعات دیتابیس"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="@dimen/size_font_defult"
+                                    app:fontFile="fonts/sl.ttf" />
+
+                            </LinearLayout>
+
+                            <!-- layExpandDatabase -->
+                            <LinearLayout
+                                android:id="@+id/layExpandDatabase"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <include layout="@layout/lay_delete_database" />
+                            </LinearLayout>
+                            <!-- layExpandProfile-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="gone"
+                            android:background="@drawable/bg_setting_inner_box"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/layDisableNotification"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imgExpandNotify"
+                                    android:layout_width="@dimen/size_image_tab_notify"
+                                    android:layout_height="@dimen/size_image_tab_notify"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="2dp"
+                                    android:src="@drawable/ic_expand_more_white_24dp" />
+
+                                <net.kianoni.fontloader.TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="دریافت نوتیفیکیشن"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="@dimen/size_font_defult"
+                                    app:fontFile="fonts/sl.ttf" />
+                            </LinearLayout>
+
+                            <!-- layExpandNotification -->
+                            <LinearLayout
+                                android:id="@+id/layExpandNotification"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <include layout="@layout/lay_disable_notify" />
+                            </LinearLayout>
+                            <!-- layExpandNotification -->
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_setting_main_box"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="right|center_vertical"
+                                android:orientation="horizontal">
+
+                                <net.kianoni.fontloader.TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="سایر"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="@dimen/size_font_big"
+                                    app:fontFile="fonts/sl.ttf" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/size_image_small"
+                                    android:layout_height="@dimen/size_image_small"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/ic_setting" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/bg_setting_inner_box"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/layUpdateSoftware"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp">
+
+                                    <net.kianoni.fontloader.TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="بروزرسانی"
+                                        android:textColor="@color/color_white"
+                                        android:textSize="@dimen/size_font_defult"
+                                        app:fontFile="fonts/sl.ttf" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/bg_setting_inner_box"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/layAbout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imgExpandAbout"
+                                        android:layout_width="@dimen/size_image_tab_notify"
+                                        android:layout_height="@dimen/size_image_tab_notify"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginRight="2dp"
+                                        android:rotation="180"
+                                        android:src="@drawable/ic_expand_more_white_24dp" />
+
+                                    <net.kianoni.fontloader.TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="درباره ما"
+                                        android:textColor="@color/color_white"
+                                        android:textSize="@dimen/size_font_defult"
+                                        app:fontFile="fonts/sl.ttf" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/layExpandAbout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:orientation="vertical"
+                                    android:visibility="visible">
+
+                                    <include layout="@layout/lay_about" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layWaiting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_back_loading"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!--<com.pnikosis.materialishprogress.ProgressWheel-->
+        <!--android:id="@+id/progress_wheel"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--app:matProg_barColor="@color/ColorPrimary"-->
+        <!--app:matProg_progressIndeterminate="true"/>-->
+
+        <ImageView
+            android:id="@+id/imgLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/anim_loading" />
+
+        <net.kianoni.fontloader.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لطفا صبر کنید"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_font_small"
+            app:fontFile="fonts/sl.ttf" />
+    </LinearLayout>
+</LinearLayout>

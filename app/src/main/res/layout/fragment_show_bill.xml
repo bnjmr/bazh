@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="3dp"
+            android:layout_height="3dp"
+            android:src="@drawable/ic_triangle_left" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_txt_bill_background_height"
+            android:layout_weight="1"
+            android:background="@drawable/bg_rounded_bill_title"
+            android:gravity="center">
+
+            <net.kianoni.fontloader.TextView
+                android:id="@+id/txtBillDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="نامشخص"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_font_defult"
+                app:fontFile="fonts/sl.ttf" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/rounded_rectangle_bill_detail_frame_box">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_lst_item_normal"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:id="@+id/txtRegDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="1394/06/01"
+                        android:textColor="@color/color_white"
+                        android:textDirection="rtl"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <net.kianoni.fontloader.TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="تاریخ ثبت"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult"
+                        app:fontFile="fonts/sl.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_lst_item_normal"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:id="@+id/txtStartDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="1394/06/31"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <net.kianoni.fontloader.TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="شروع دوره"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult"
+                        app:fontFile="fonts/sl.ttf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_lst_item_normal"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:id="@+id/txtEndDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="1394/06/31"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <net.kianoni.fontloader.TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="پایان دوره"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult"
+                        app:fontFile="fonts/sl.ttf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_lst_item_normal"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:id="@+id/txtExpDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="1394/06/31"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <net.kianoni.fontloader.TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="مهلت پرداخت"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult"
+                        app:fontFile="fonts/sl.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layPayDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_lst_item_normal"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:id="@+id/txtPayDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="1394/06/31"
+                        android:textColor="@color/color_white"
+                        android:textDirection="rtl"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <net.kianoni.fontloader.TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="تاریخ پرداخت"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult"
+                        app:fontFile="fonts/sl.ttf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_lst_item_normal"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="تومان"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:id="@+id/txtPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="25000"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <net.kianoni.fontloader.TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="مبلغ پایه"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult"
+                        app:fontFile="fonts/sl.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_lst_item_normal"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="تومان"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:id="@+id/txtFine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="0"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <net.kianoni.fontloader.TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="مبلغ جریمه"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult"
+                        app:fontFile="fonts/sl.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_lst_item_normal"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="تومان"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:id="@+id/txtDiscount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="0"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <net.kianoni.fontloader.TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="مبلغ تخفیف"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult"
+                        app:fontFile="fonts/sl.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_lst_item_normal"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="تومان"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:id="@+id/txtTax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="25000"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <net.kianoni.fontloader.TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="مبلغ مالیات"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult"
+                        app:fontFile="fonts/sl.ttf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_lst_item_normal"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="تومان"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:id="@+id/txtAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="25000"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <net.kianoni.fontloader.TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="مبلغ قابل پرداخت"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult"
+                        app:fontFile="fonts/sl.ttf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_lst_item_normal"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:id="@+id/txtPaymentType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="اعتبار"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <net.kianoni.fontloader.TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="نوع پرداخت"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult"
+                        app:fontFile="fonts/sl.ttf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_lst_item_normal"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:id="@+id/txtPayer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="ط"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <net.kianoni.fontloader.TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="پرداخت کننده"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult"
+                        app:fontFile="fonts/sl.ttf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_lst_item_normal"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ir.jahanmirbazh.components.PersianTextViewNormal
+                        android:id="@+id/txtDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="ط"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult" />
+
+                    <net.kianoni.fontloader.TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="توضیحات "
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/size_font_defult"
+                        app:fontFile="fonts/sl.ttf" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bg_rounded_bill_status_not_paid"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ir.jahanmirbazh.components.PersianTextView
+            android:id="@+id/txtPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="پرداخت"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_font_defult" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_pay" />
+    </LinearLayout>
+</LinearLayout>

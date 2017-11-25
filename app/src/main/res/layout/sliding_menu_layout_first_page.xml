@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- SLIDING LAYOUT -->
+    <LinearLayout
+        android:id="@+id/dragView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_status_bar"
+            android:background="@drawable/menu_bar_800px"
+            android:orientation="horizontal"
+            android:rotationX="180">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:id="@+id/layCountNewNotify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_image_avatar"
+                        android:layout_height="@dimen/size_image_avatar"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_notification" />
+
+                    <LinearLayout
+                        android:id="@+id/layTxtCountNewNotify"
+                        android:layout_width="@dimen/size_layBack_notify_child_slide"
+                        android:layout_height="@dimen/size_layBack_notify_child_slide"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/size_margin_lay_notify_top"
+                        android:background="@drawable/circle_background"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ir.jahanmirbazh.components.SizeAdjustingTextView
+                            android:id="@+id/txtCountNewNotify"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="100"
+                            android:textColor="@color/color_white"
+                            android:typeface="serif" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <net.kianoni.fontloader.TextView
+                android:id="@+id/txtCurrentDateInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:text="دوشنبه 6 اردیبهشت"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_font_defult"
+                app:fontFile="fonts/SCNormal.otf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layMainMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00b7ce"
+            android:rotationX="180">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layLeftMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/rounded_rectangle_top_right_raduis_dark_green"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layUserInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <net.kianoni.fontloader.TextView
+                                android:id="@+id/txtEstateCredit"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="اعتبار ملک : 0 تومان "
+                                android:textColor="@color/color_white"
+                                android:textSize="@dimen/size_font_defult"
+                                android:visibility="gone"
+                                app:fontFile="fonts/SCNormal.otf" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1">
+
+                            <net.kianoni.fontloader.TextView
+                                android:id="@+id/txtUserName"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="10dp"
+                                android:ellipsize="end"
+                                android:gravity="right|center_vertical"
+                                android:maxLines="2"
+                                android:text="پیام مبرایی"
+                                android:textColor="@color/color_white"
+                                android:textSize="@dimen/size_font_defult"
+                                app:fontFile="fonts/SCNormal.otf" />
+                        </LinearLayout>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgUserAvatar"
+                            android:layout_width="@dimen/size_image_avatar"
+                            android:layout_height="@dimen/size_image_avatar"
+                            android:src="@drawable/ic_avatar"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layLstEstate"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="#00b7ce"
+                        android:orientation="vertical">
+
+                        <ExpandableListView
+                            android:id="@+id/expEstateList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_trans"
+                            android:divider="@null"
+                            android:groupIndicator="@null"
+                            android:listSelector="@android:color/transparent" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layRightMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/right_menu_image_800px"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgSetting"
+                        android:layout_width="@dimen/size_image_avatar"
+                        android:layout_height="@dimen/size_image_avatar"
+                        android:src="@drawable/ic_setting" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgSignOut"
+                        android:layout_width="@dimen/size_image_avatar"
+                        android:layout_height="@dimen/size_image_avatar"
+                        android:layout_marginBottom="20dp"
+                        android:clickable="true"
+                        android:src="@drawable/ic_exit" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

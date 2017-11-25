@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main_page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:rotationX="180">
+
+        <com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:sothree="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/laySlidingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:gravity="bottom"
+            sothree:umanoDragView="@+id/dragView"
+            sothree:umanoOverlay="true"
+            sothree:umanoPanelHeight="@dimen/size_status_bar"
+            sothree:umanoShadowHeight="0dp">
+
+            <!-- MAIN CONTENT -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_status_bar"
+                android:orientation="vertical"
+                android:rotationX="180">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_status_bar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.85"
+                    android:orientation="vertical">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:rotationY="180" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.15"
+                    android:orientation="horizontal">
+
+                    <ir.jahanmirbazh.components.SquareLinearLayout
+                        android:layout_width="0dp"
+                        android:id="@+id/layCostTab"
+                        android:visibility="gone"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgChatPager"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_chat_menu_bar_normal" />
+
+                            <LinearLayout
+                                android:id="@+id/layCountNewChat"
+                                android:layout_width="@dimen/size_layBack_notify_child_slide"
+                                android:layout_height="@dimen/size_layBack_notify_child_slide"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="@dimen/size_margin_right_new_message"
+                                android:layout_marginTop="@dimen/size_margin_top_new_message"
+                                android:background="@drawable/circle_background"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ir.jahanmirbazh.components.SizeAdjustingTextView
+                                    android:id="@+id/txtCountNewChat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="100"
+                                    android:textColor="@color/color_white"
+                                    android:typeface="serif" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </ir.jahanmirbazh.components.SquareLinearLayout>
+
+                    <ir.jahanmirbazh.components.SquareLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgNewsPager"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitEnd"
+                                android:src="@drawable/ic_news_menu_bar_selected" />
+
+                            <LinearLayout
+                                android:id="@+id/layCountNewNews"
+                                android:layout_width="@dimen/size_layBack_notify_child_slide"
+                                android:layout_height="@dimen/size_layBack_notify_child_slide"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="@dimen/size_margin_right_new_message"
+                                android:layout_marginTop="@dimen/size_margin_top_new_message"
+                                android:background="@drawable/circle_background"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ir.jahanmirbazh.components.SizeAdjustingTextView
+                                    android:id="@+id/txtCountNewNews"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:gravity="center"
+                                    android:text="100"
+                                    android:textColor="@color/color_white"
+                                    android:typeface="serif" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </ir.jahanmirbazh.components.SquareLinearLayout>
+
+                    <ir.jahanmirbazh.components.SquareLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgTicketPager"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_ticket_menu_bar_normal" />
+
+                            <LinearLayout
+                                android:id="@+id/layCountNewTicket"
+                                android:layout_width="@dimen/size_layBack_notify_child_slide"
+                                android:layout_height="@dimen/size_layBack_notify_child_slide"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="@dimen/size_margin_right_new_message"
+                                android:layout_marginTop="@dimen/size_margin_top_new_message"
+                                android:background="@drawable/circle_background"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ir.jahanmirbazh.components.SizeAdjustingTextView
+                                    android:id="@+id/txtCountNewTicketDetail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="100"
+                                    android:textColor="@color/color_white"
+                                    android:typeface="serif" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </ir.jahanmirbazh.components.SquareLinearLayout>
+
+                    <ir.jahanmirbazh.components.SquareLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgPaymentPager"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_payment_menu_bar_normal" />
+
+                            <LinearLayout
+                                android:id="@+id/layCountNewPayment"
+                                android:layout_width="@dimen/size_layBack_notify_child_slide"
+                                android:layout_height="@dimen/size_layBack_notify_child_slide"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="@dimen/size_margin_right_new_message"
+                                android:layout_marginTop="@dimen/size_margin_top_new_message"
+                                android:background="@drawable/circle_background"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ir.jahanmirbazh.components.SizeAdjustingTextView
+                                    android:id="@+id/txtCountNewPayment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="100"
+                                    android:textColor="@color/color_white"
+                                    android:typeface="serif" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </ir.jahanmirbazh.components.SquareLinearLayout>
+
+                    <ir.jahanmirbazh.components.SquareLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgBillPager"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_check_menu_bar_normal" />
+
+                            <LinearLayout
+                                android:id="@+id/layCountNewBill"
+                                android:layout_width="@dimen/size_layBack_notify_child_slide"
+                                android:layout_height="@dimen/size_layBack_notify_child_slide"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="@dimen/size_margin_right_new_message"
+                                android:layout_marginTop="@dimen/size_margin_top_new_message"
+                                android:background="@drawable/circle_background"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ir.jahanmirbazh.components.SizeAdjustingTextView
+                                    android:id="@+id/txtCountNewBill"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="100"
+                                    android:textColor="@color/color_white" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </ir.jahanmirbazh.components.SquareLinearLayout>
+
+                    <ir.jahanmirbazh.components.SquareLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgHomePager"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_home_menu_bar_normal" />
+                        </FrameLayout>
+                    </ir.jahanmirbazh.components.SquareLinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- SLIDING LAYOUT -->
+            <include
+                layout="@layout/sliding_menu_layout_first_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+    </RelativeLayout>
+</FrameLayout>

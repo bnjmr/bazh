@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <net.kianoni.fontloader.TextView
+            app:fontFile="fonts/is.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/size_font_big"
+            android:text="شما در این قسمت میتوانید دریافت نوتیفیکیشن از طرف برنامه را فعال یا غیر فعال کنید."
+            android:textColor="@color/color_white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"/>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:gravity="left|center_vertical"
+                  android:layout_height="wrap_content">
+        <net.kianoni.fontloader.TextView
+                app:fontFile="fonts/sl.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="فعال"
+                android:textColor="@color/color_white"/>
+        <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkActive"/>
+    </LinearLayout>
+</LinearLayout>

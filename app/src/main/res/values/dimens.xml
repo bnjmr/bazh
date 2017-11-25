@@ -1,0 +1,100 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="size_layBack_notify_tab">17dp</dimen>
+    <dimen name="size_layBack_notify">15dp</dimen>
+    <dimen name="size_layBack_notify_child_slide">19dp</dimen>
+
+    <!-- Chat Dialog-->
+    <dimen name="size_margin_chat_text">26dp</dimen>
+    <dimen name="size_margin_chat">20dp</dimen>
+    <dimen name="size_chat_dialog">46dp</dimen>
+
+
+
+    <dimen name="size_status_bar">75dp</dimen>
+    <dimen name="size_image_avatar">36dp</dimen>
+    <dimen name="size_image_estate_option_height">56dp</dimen>
+    <dimen name="size_image_estate_header_height">48dp</dimen>
+    <dimen name="size_estate_margin_between">-2.5dp</dimen>
+    <dimen name="size_line_height">1dp</dimen>
+    <dimen name="size_line_border_back_fragment">2dp</dimen>
+    <dimen name="size_img_expand_collapse">21dp</dimen>
+    <dimen name="size_margin_lay_notify_left_right">3dp</dimen>
+    <dimen name="size_margin_lay_notify_top">3dp</dimen>
+    <dimen name="size_margin_lay_estate_item_margin">2.5dp</dimen>
+    <dimen name="size_margin_right_new_message">7dp</dimen>
+    <dimen name="size_margin_top_new_message">5dp</dimen>
+    <dimen name="size_margin_top_from_add_new_item">28dp</dimen>
+    <dimen name="size_txt_bill_background_height">35dp</dimen>
+    <dimen name="size_margin_top_bill_detail_item_from_title">40dp</dimen>
+    <dimen name="size_margin_left_right_chat_box">23dp</dimen>
+    <dimen name="size_height_show_opinion">30dp</dimen>
+
+
+    <dimen name="size_chat_btn">48dp</dimen>
+    <dimen name="size_chat_btn_image">24dp</dimen>
+
+
+
+
+    <!-- image size -->
+    <dimen name="size_image_menu">36dp</dimen>
+    <dimen name="size_image_tab">30dp</dimen>
+    <dimen name="size_image_tab_notify">20dp</dimen>
+    <dimen name="size_image_menu_parent">24dp</dimen>
+    <dimen name="size_image_person_header_drawer">64dp</dimen>
+    <dimen name="size_image_chat_file_thumbnail_width">128dp</dimen>
+    <dimen name="size_image_chat_file_thumbnail_height">96dp</dimen>
+
+
+    <!-- size image -->
+    <dimen name="size_image_very_very_small">16dp</dimen>
+    <dimen name="size_image_very_small">32dp</dimen>
+    <dimen name="size_image_small">48dp</dimen>
+    <dimen name="size_image_default">64dp</dimen>
+    <dimen name="size_image_big">72dp</dimen>
+    <dimen name="size_image_very_big">96dp</dimen>
+    <dimen name="size_image_very_very_big">110dp</dimen>
+
+
+    <!-- Fonts -->
+
+    <!-- Application -->
+    <dimen name="min_size_notify_layout">25dp</dimen>
+
+    <!-- ActivityMain -->
+    <dimen name="size_font_edittext">14dp</dimen>
+    <dimen name="size_font_login_loading_text">14dp</dimen>
+    <dimen name="size_font_menu_text">20dp</dimen>
+    <dimen name="size_font_menu_parent_text">22dp</dimen>
+    <dimen name="size_font_notify_tab">10dp</dimen>
+    <dimen name="size_font_person_name_header_drawer">14dp</dimen>
+    <dimen name="size_font_person_detail_header_drawer">16dp</dimen>
+
+
+    <!-- ActivityShowBill-->
+    <dimen name="size_font_header_activity">20dp</dimen>
+    <dimen name="size_font_pardakht_button">16dp</dimen>
+    <dimen name="size_font_item_show_bill_detail">16dp</dimen>
+    <dimen name="size_font_toman">15dp</dimen>
+    <dimen name="size_font_price">15dp</dimen>
+    <dimen name="size_font_defult">12dp</dimen>
+    <dimen name="size_font_big">14dp</dimen>
+    <dimen name="size_font_very_big">18sp</dimen>
+    <dimen name="size_font_small">10dp</dimen>
+    <dimen name="size_font_very_small">8dp</dimen>
+
+
+    <!-- ActivityShowNews -->
+    <dimen name="size_font_onvane_khabar">17dp</dimen>
+    <dimen name="size_font_matn_khabar">16dp</dimen>
+    <dimen name="size_font_message_layout">14dp</dimen>
+
+
+    <dimen name="size_height_fragment_wizard_title_box">80dp</dimen>
+    <dimen name="size_margin_top_description_wizard">190dp</dimen>
+
+
+</resources>

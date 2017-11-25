@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_app"
+    android:orientation="vertical">
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imgCloudR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/wizard_cloud_r" />
+
+    <ImageView
+        android:id="@+id/imgBuild"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/wizard_build" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imgCloudL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/wizard_cloud_l" />
+
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/wizard_logo" />
+</FrameLayout>

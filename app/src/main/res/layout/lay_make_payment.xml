@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/rounded_rectangle_payment_layout_box"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <net.kianoni.fontloader.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="ثبت پرداخت جدید"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_font_big"
+            app:fontFile="fonts/sl.ttf" />
+
+        <ImageView
+            android:layout_width="@dimen/size_image_small"
+            android:layout_height="@dimen/size_image_small"
+            android:src="@drawable/ic_payment_title_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/rounded_rectangle_payment_inner_layout_box"
+        android:orientation="vertical">
+
+        <net.kianoni.fontloader.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:text="در این قسمت مبلغ واریزی خود را وارد کرده، سپس دکمه پرداخت را بزنید."
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_font_defult"
+            app:fontFile="fonts/sl.ttf" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <net.kianoni.fontloader.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:text="تومان"
+                    android:textColor="@color/color_white"
+                    app:fontFile="fonts/sl.ttf" />
+
+                <com.ctrlplusz.anytextview.AnyEditTextView
+                    android:id="@+id/edtPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:background="@color/color_light_light_gray"
+                    android:digits="0123456789"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:minWidth="100dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/color_black"
+                    android:textSize="20dp"
+                    app:typeface="biran.ttf" />
+
+                <net.kianoni.fontloader.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="مبلغ"
+                    android:textColor="@color/color_white"
+                    app:fontFile="fonts/sl.ttf" />
+                <!--<jahanmirbazhbazh.components.MaskedEditText-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:minWidth="100dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="3dp"-->
+                <!--app:typeface="serif"-->
+                <!--android:paddingRight="5dp"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:gravity="center"-->
+                <!--android:inputType="number"-->
+                <!--android:textSize="20dp"-->
+                <!--android:background="@color/color_light_light_gray"-->
+                <!--android:hint="0"-->
+                <!--android:id="@+id/edtPayment"-->
+                <!--app:mask="###,###,###,###,###"/>-->
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <net.kianoni.fontloader.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="10dp"
+            android:text="در این قسمت توضیحاتی درباره وجه پرداختی درج کنید."
+            android:textColor="@color/md_grey_700"
+            app:fontFile="fonts/is.ttf" />
+
+        <com.ctrlplusz.anytextview.AnyEditTextView
+            android:id="@+id/edtPaymentDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_rectangle_edit_text_white_color"
+            android:hint="توضیحات"
+            android:lines="2"
+            android:maxLines="3"
+            android:textColor="@color/color_black"
+            android:padding="5dp"
+            android:textSize="@dimen/size_font_defult"
+            app:typeface="is.ttf" />
+
+        <LinearLayout
+            android:id="@+id/layPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_pay_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <net.kianoni.fontloader.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="پرداخت"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_font_defult"
+                app:fontFile="fonts/sl.ttf" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_pay" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
